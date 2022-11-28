@@ -14,8 +14,9 @@ class CreateMarcasEquipos extends Migration
     public function up()
     {
         Schema::create('Marcas_Equipos', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->timestamps();
+            $table->String('Nombre_Marca')->nullable();
         });
     }
 

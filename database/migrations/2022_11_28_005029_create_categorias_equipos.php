@@ -14,8 +14,9 @@ class CreateCategoriasEquipos extends Migration
     public function up()
     {
         Schema::create('Categorias_Equipos', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->timestamps();
+            $table->String('Cat_Equipo')->nullable();
         });
     }
 

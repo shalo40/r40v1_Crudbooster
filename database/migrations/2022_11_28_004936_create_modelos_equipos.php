@@ -14,8 +14,11 @@ class CreateModelosEquipos extends Migration
     public function up()
     {
         Schema::create('Modelos_Equipos', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->timestamps();
+            $table->Integer('id_Marca_Equipo')->nullable();
+            $table->String('Nombre_Modelo')->nullable();
+            
         });
     }
 
