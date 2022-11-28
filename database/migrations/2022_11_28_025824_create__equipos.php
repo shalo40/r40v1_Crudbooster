@@ -18,10 +18,14 @@ class CreateEquipos extends Migration
             $table->timestamps();
             $table->String('N_Serie_Eq')->nullable();
             $table->String('Color_Eq')->nullable();
-            $table->String('')->nullable();
-            $table->String('')->nullable();
-            $table->String('')->nullable();
+            $table->String('Detalles_Eq')->nullable();
+            $table->String('Accesorios_Eq')->nullable();
+            $table->String('MotivoIngreso_Eq')->nullable();
 
+            
+            $table->Integer('id_Marca_Equipo')->nullable();
+            $table->Integer('id_Modelo_Equipo')->nullable();
+            $table->Integer('id_Categoria_Equipo')->nullable();
         });
     }
 
