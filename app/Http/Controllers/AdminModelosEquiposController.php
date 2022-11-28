@@ -37,7 +37,7 @@
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
-			$this->form[] = ['label'=>'Marca del equipo','name'=>'id_Marca_Equipo','type'=>'select2','validation'=>'required|required','width'=>'col-sm-10','datatable'=>'Marca_Equipo,id'];
+			$this->form[] = ['label'=>'Marca del equipo','name'=>'id_Marca_Equipo','type'=>'select2','validation'=>'required|required','width'=>'col-sm-10','datatable'=>'marcas_equipos,Nombre_Marca'];
 			$this->form[] = ['label'=>'Modelo','name'=>'Nombre_Modelo','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			# END FORM DO NOT REMOVE THIS LINE
 
