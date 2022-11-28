@@ -14,8 +14,13 @@ class CreateProcedimientos extends Migration
     public function up()
     {
         Schema::create('Procedimientos', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->timestamps();
+            $table->String('Cod_Proced')->nullable();
+            $table->String('Desc_Proced')->nullable();
+            $table->Double('Valor_Proced')->nullable();
+            $table->Integer('Tiempo_Proced')->nullable();
+            $table->String('Recursos_Proced')->nullable();
         });
     }
 
