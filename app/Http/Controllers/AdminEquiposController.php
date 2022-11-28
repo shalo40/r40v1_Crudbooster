@@ -38,30 +38,31 @@
 			$this->col[] = ["label"=>"Accesorios","name"=>"Accesorios_Eq"];
 			$this->col[] = ["label"=>"Color","name"=>"Color_Eq"];
 			$this->col[] = ["label"=>"Detalles","name"=>"Detalles_Eq"];
+			$this->col[] = ["label"=>"Fecha de Ingreso","name"=>"created_at"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
-			$this->form[] = ['label'=>'N Serie Eq','name'=>'N_Serie_Eq','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Color Eq','name'=>'Color_Eq','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Detalles Eq','name'=>'Detalles_Eq','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Accesorios Eq','name'=>'Accesorios_Eq','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'MotivoIngreso Eq','name'=>'MotivoIngreso_Eq','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Marca Equipo','name'=>'id_Marca_Equipo','type'=>'select2','validation'=>'required','width'=>'col-sm-10','datatable'=>'Marca_Equipo,id'];
-			$this->form[] = ['label'=>'Modelo Equipo','name'=>'id_Modelo_Equipo','type'=>'select2','validation'=>'required','width'=>'col-sm-10','datatable'=>'Modelo_Equipo,id'];
-			$this->form[] = ['label'=>'Categoria Equipo','name'=>'id_Categoria_Equipo','type'=>'select2','validation'=>'required','width'=>'col-sm-10','datatable'=>'Categoria_Equipo,id'];
+			$this->form[] = ['label'=>'Categoria','name'=>'id_Categoria_Equipo','type'=>'select2','validation'=>'required','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Marca','name'=>'id_Marca_Equipo','type'=>'select2','validation'=>'required','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Modelo','name'=>'id_Modelo_Equipo','type'=>'select2','validation'=>'required','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Numero de serie','name'=>'N_Serie_Eq','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Color','name'=>'Color_Eq','type'=>'text','validation'=>'min:1|max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Detalles','name'=>'Detalles_Eq','type'=>'text','validation'=>'min:1|max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Cargador','name'=>'Accesorios_Eq','type'=>'checkbox','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Motivo de ingreso','name'=>'MotivoIngreso_Eq','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
 			//$this->form = [];
-			//$this->form[] = ["label"=>"N Serie Eq","name"=>"N_Serie_Eq","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
-			//$this->form[] = ["label"=>"Color Eq","name"=>"Color_Eq","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
-			//$this->form[] = ["label"=>"Detalles Eq","name"=>"Detalles_Eq","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
-			//$this->form[] = ["label"=>"Accesorios Eq","name"=>"Accesorios_Eq","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
-			//$this->form[] = ["label"=>"MotivoIngreso Eq","name"=>"MotivoIngreso_Eq","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
-			//$this->form[] = ["label"=>"Marca Equipo","name"=>"id_Marca_Equipo","type"=>"select2","required"=>TRUE,"validation"=>"required|integer|min:0","datatable"=>"Marca_Equipo,id"];
-			//$this->form[] = ["label"=>"Modelo Equipo","name"=>"id_Modelo_Equipo","type"=>"select2","required"=>TRUE,"validation"=>"required|integer|min:0","datatable"=>"Modelo_Equipo,id"];
-			//$this->form[] = ["label"=>"Categoria Equipo","name"=>"id_Categoria_Equipo","type"=>"select2","required"=>TRUE,"validation"=>"required|integer|min:0","datatable"=>"Categoria_Equipo,id"];
+			//$this->form[] = ['label'=>'Categoria','name'=>'id_Categoria_Equipo','type'=>'select2','validation'=>'required','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Marca','name'=>'id_Marca_Equipo','type'=>'select2','validation'=>'required','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Modelo','name'=>'id_Modelo_Equipo','type'=>'select2','validation'=>'required','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Numero de serie','name'=>'N_Serie_Eq','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Color','name'=>'Color_Eq','type'=>'text','validation'=>'min:1|max:255','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Detalles','name'=>'Detalles_Eq','type'=>'text','validation'=>'min:1|max:255','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Cargador','name'=>'Accesorios_Eq','type'=>'radio','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Motivo de ingreso','name'=>'MotivoIngreso_Eq','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			# OLD END FORM
 
 			/* 
