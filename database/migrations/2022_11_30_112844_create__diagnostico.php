@@ -19,23 +19,23 @@ class CreateDiagnostico extends Migration
             $table->timestamps();
             //CAMPOS DEL DIAGNOSTICO
             //CAMPOS DE SOFTWARE
-            $table->Integer('DG_PS_01_ENCENDIDO')->nullable();
-            $table->Integer('DG_PS_02_START_TIME')->nullable();
-            $table->Integer('DG_PS_03_MSJE_ERROR')->nullable();
-            $table->Integer('DG_PS_04_EMICION_SONIDOS')->nullable();
-            $table->Integer('DG_PS_05_DATETIME_SYS')->nullable();
-            $table->Integer('DG_PS_06_DRIVERS')->nullable();
-            $table->Integer('DG_PS_07_REND_CPU')->nullable();
-            $table->Integer('DG_PS_08_REND_RAM')->nullable();
-            $table->Integer('DG_PS_09_REND_HDD')->nullable();
-            $table->Integer('DG_PS_10_REND_RED')->nullable();
-            $table->Integer('DG_PS_11_ANTIVIRUS')->nullable();
-            $table->Integer('DG_PS_12_OFFICE')->nullable();
-            $table->Integer('DG_PS_13_OTROS_PROG')->nullable();
-            $table->Integer('DG_PS_14_COPIA_SISTEMA')->nullable();
-            $table->Integer('DG_PS_15_COPIA_ARCHIVOS')->nullable();
-            $table->Integer('DG_PS_16_VERSION_SO')->nullable();
-            $table->Integer('DG_PS_17_DATETIME_LAST_UPDATE')->nullable();
+            $table->String('DG_PS_01_ENCENDIDO')->nullable();
+            $table->String('DG_PS_02_START_TIME')->nullable();
+            $table->String('DG_PS_03_MSJE_ERROR')->nullable();
+            $table->String('DG_PS_04_EMICION_SONIDOS')->nullable();
+            $table->String('DG_PS_05_DATETIME_SYS')->nullable();
+            $table->String('DG_PS_06_DRIVERS')->nullable();
+            $table->String('DG_PS_07_REND_CPU')->nullable();
+            $table->String('DG_PS_08_REND_RAM')->nullable();
+            $table->String('DG_PS_09_REND_HDD')->nullable();
+            $table->String('DG_PS_10_REND_RED')->nullable();
+            $table->String('DG_PS_11_ANTIVIRUS')->nullable();
+            $table->String('DG_PS_12_OFFICE')->nullable();
+            $table->String('DG_PS_13_OTROS_PROG')->nullable();
+            $table->String('DG_PS_14_COPIA_SISTEMA')->nullable();
+            $table->String('DG_PS_15_COPIA_ARCHIVOS')->nullable();
+            $table->String('DG_PS_16_VERSION_SO')->nullable();
+            $table->String('DG_PS_17_DATETIME_LAST_UPDATE')->nullable();
 
             //CACMPOS DE HARRDWARE
             $table->Integer('DG_PH_01_SCREEN')->nullable();
